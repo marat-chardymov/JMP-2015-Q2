@@ -32,6 +32,7 @@ public class UserDaoImpl implements UserDao {
 
     public List<PowerUser> findPowerUsers() {
         Query query = entityManager.createQuery("SELECT p FROM PowerUser p");
+        query.getRes
         return (List<PowerUser>) query.getResultList();
     }
 }
